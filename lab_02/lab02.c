@@ -213,17 +213,16 @@ struct Node* insert_begin(struct Node *head, int value) {
     newNode->data = value;
     newNode->next = head;
     return newNode; 
-    return head;
 }
 
 struct Node* delete_value(struct Node *head, int value) {
-    struct Node *temp = head, *prev = NULL;
+    struct Node *temp = head,
+            *prev = NULL;
 
     if (temp != NULL && temp->data == value) {
         head = temp->next;  
         free(temp);         
         return head;
-    return head;
     }
     while (temp != NULL && temp->data != value) {
         prev = temp;
@@ -316,10 +315,10 @@ void task5_2_realloc_array() {
     int *temp = (int *)realloc(ptr, 10 * sizeof(int));
     if (temp == NULL) {
         printf("Reallocation failed\n");
-        free(ptr);  
+        free(ptr);
         return;
     }
-    ptr = temp;  
+    ptr = temp;
 
     printf("Enter 5 integers:\n");
     for (int i = 5; i < 10; i++) {
@@ -371,24 +370,26 @@ void my_free(void *ptr) {
 
 void report_leaks() {
     if (allocated_count > 0) {
-        printf("\n[Memory Leak Detected] %d block(s) not freed:\n", allocated_count);
+        printf("(Memory Leak Detected) %d block not freed:\n", allocated_count);
         for (int i = 0; i < allocated_count; i++) {
             printf("  Leak: pointer %p\n", allocated_ptrs[i]);
         }
     } else {
-        printf("\nNo memory leaks detected! \n");
+        printf("No memory leaks detected! \n");
     }
 }
 
 void task5_3_leak_detector() {
     int *a = (int*) my_malloc(sizeof(int));
     int *b = (int*) my_malloc(5 * sizeof(int));
+    int *c;
 
     *a = 42;
     for (int i = 0; i < 5; i++) b[i] = i + 1;
 
-    //my_free(a);
+    my_free(a);
     my_free(b);
+    my_free(c);
     report_leaks();
 }
 
@@ -478,8 +479,8 @@ int main() {
     // Uncomment and run tasks as you implement
 
     // --- Part 1 ---
-    //task1_1();
-    //int a=5, b=10; swap(&a,&b);
+    // task1_1();
+    // int a=5, b=10; swap(&a,&b);
     // task1_3();
 
     // --- Part 2 ---
@@ -489,7 +490,7 @@ int main() {
     // printf("Palindrome? %s\n", is_palindrome("Madam") ? "Yes":"No");
 
     // --- Part 3 ---
-    //task3_1_macros();
+    // task3_1_macros();
     // task3_2_fileio();
 
     // --- Part 4 ---
@@ -501,7 +502,7 @@ int main() {
     // task5_3_leak_detector();
 
     // --- Final Task ---
-     test_booth();
+    // test_booth();
 
     return 0;
 }

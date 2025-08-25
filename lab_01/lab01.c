@@ -115,7 +115,7 @@ void task03_guessing_game() {
 // ======================= Task 0.4 =======================
 int isPrime(int n) {
     if (n <= 1) return 0; 
-    for (int i = 2; i * i <= n; i++) {
+    for (int i = 2;  i < n; i++) {
         if (n % i == 0)
             return 0; 
     }
@@ -135,8 +135,8 @@ void task04_prime_numbers() {
 int factorial(int n) {
     if (n == 0 || n == 1) 
         return 1;
-    return n * factorial(n - 1); 
-    return 1;
+    n = n * factorial(n - 1); 
+    return n;
 }
 
 // ======================= Task 0.5 =======================
@@ -358,19 +358,19 @@ int main(int argc, char *argv[]) {
     srand(time(NULL)); // Seed random numbers
 
     // Uncomment tasks as you implement them
-    // task01_datatypes();
-    // task02_calculator();
-    //task03_fibonacci();
-    // task03_guessing_game();
-    // task04_prime_numbers();
-    // printf("Factorial of 5 = %d\n", factorial(5));
-    // task05_reverse_string();
-    // task05_second_largest();
-    // task06_file_io();
-    // task07_bitwise_ops();
-    // task08_enum_weekday();
-    // task09_struct_distance();
-    // task10_cmd_args(argc, argv);
+     task01_datatypes();
+     task02_calculator();
+     task03_fibonacci();
+     task03_guessing_game();
+     task04_prime_numbers();
+     printf("Factorial of 5 = %d\n", factorial(5));
+     task05_reverse_string();
+     task05_second_largest();
+     task06_file_io();
+     task07_bitwise_ops();
+     task08_enum_weekday();
+     task09_struct_distance();
+     task10_cmd_args(argc, argv);
 
     return 0;
 }
