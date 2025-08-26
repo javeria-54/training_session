@@ -15,11 +15,9 @@ _start:
 loop:
     bge t2, t3, end         # stop when i >= j
     
-    # Get array[i] address
     slli t4, t2, 2      # offset = i * 4
     add t4, t0, t4
-    
-    # Get array[j] address
+
     slli t5, t3, 2      # offset = j * 4
     add t5, t0, t5
     

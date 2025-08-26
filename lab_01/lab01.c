@@ -4,6 +4,7 @@
 #include <time.h>
 #include <math.h>
 
+
 // ======================= Task 0.1 =======================
 void task01_datatypes() {
     int age = 21;
@@ -16,7 +17,7 @@ void task01_datatypes() {
     printf("Size of double: %zu bytes\n", sizeof(double));
     printf("Size of char: %zu bytes\n", sizeof(char));
     
-    printf("\nOriginal values:\n");
+    printf("Original values:\n");
     printf("Age = %d\n", age);
     printf("Pi = %f\n", pi);
     printf("Precise Pi = %lf\n", precise_pi);

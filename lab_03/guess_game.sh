@@ -17,4 +17,3 @@ do
         echo "Too high!"
     fi
 done
-

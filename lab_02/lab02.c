@@ -112,21 +112,14 @@ int is_palindrome( char *s) {
 
 void task3_1_macros() {
     printf("SQUARE(5) = %d\n" , SQUARE(5));
-    printf("SQUARE(2+3) = %d\n", SQUARE(2+3));
 
     printf("MAX2(10, 20) = %d \n", MAX2(10, 20));
-    printf("MAX2(-5, -2) = %d \n", MAX2(-5, -2));
 
     printf("MAX3(3, 7, 5) = %d \n", MAX3(3, 7, 5));
-    printf("MAX3(1, -1, 0) = %d \n", MAX3(1, -1, 0));
 
     printf("MAX4(1, 2, 3, 4) = %d \n", MAX4(1, 2, 3, 4));
-    printf("MAX4(-10, -20, -5, -15) = %d \n", MAX4(-10, -20, -5, -15));
 
-    printf("TO_UPPER('a') = %c \n", TO_UPPER('a'));
-    printf("TO_UPPER('z') = %c \n", TO_UPPER('z'));
-    printf("TO_UPPER('A') = %c \n", TO_UPPER('A'));
-    printf("TO_UPPER('5') = %c \n", TO_UPPER('5'));    
+    printf("TO_UPPER('a') = %c \n", TO_UPPER('a'));  
 }
 
 struct Student {
@@ -217,7 +210,7 @@ struct Node* insert_begin(struct Node *head, int value) {
 
 struct Node* delete_value(struct Node *head, int value) {
     struct Node *temp = head,
-            *prev = NULL;
+            *prev = NULL;                     
 
     if (temp != NULL && temp->data == value) {
         head = temp->next;  
@@ -235,6 +228,24 @@ struct Node* delete_value(struct Node *head, int value) {
 
     return head;
 }
+
+struct Node* insert_end(struct Node *head, int value) {
+    struct Node *newNode = (struct Node*)malloc(sizeof(struct Node));
+    newNode->data = value;
+    newNode->next = NULL;
+
+    if (head == NULL)  
+        return newNode;
+
+    struct Node *temp = head;
+    while (temp->next != NULL) {
+        temp = temp->next;
+    }
+    temp->next = newNode;
+
+    return head;
+}
+
 
 void print_list(struct Node *head) {
     struct Node *curr = head;
@@ -460,7 +471,7 @@ void test_booth() {
     product = booth_multiply(a, b);
     printf("%d × %d = %d\n", a, b, product);
 
-    a = -67; b = 1;
+    a = -67; b = 56;
     product = booth_multiply(a, b);
     printf("%d × %d = %d\n", a, b, product);
 
@@ -479,30 +490,30 @@ int main() {
     // Uncomment and run tasks as you implement
 
     // --- Part 1 ---
-    // task1_1();
-    // int a=5, b=10; swap(&a,&b);
-    // task1_3();
+    //task1_1();
+    //int a=5, b=10; swap(&a,&b);
+    //task1_3();
 
     // --- Part 2 ---
-    // printf("Len = %d\n", my_strlen("Hello"));
-    // char buf[100]; my_strcpy(buf,"World");
-    // printf("Copied: %s\n", buf);
-    // printf("Palindrome? %s\n", is_palindrome("Madam") ? "Yes":"No");
+    //printf("Len = %d\n", my_strlen("Hello"));
+    //char buf[100]; my_strcpy(buf,"World");
+    //printf("Copied: %s\n", buf);
+    //printf("Palindrome? %s\n", is_palindrome("Madam") ? "Yes":"No");
 
     // --- Part 3 ---
-    // task3_1_macros();
-    // task3_2_fileio();
+    //task3_1_macros();
+    //task3_2_fileio();
 
     // --- Part 4 ---
-    // task4_1_linkedlist();
+    //task4_1_linkedlist();
 
     // --- Part 5 ---
-    // task5_1_dynamic_array();
-    // task5_2_realloc_array();
-    // task5_3_leak_detector();
+    //task5_1_dynamic_array();
+    //task5_2_realloc_array();
+    //task5_3_leak_detector();
 
     // --- Final Task ---
-    // test_booth();
+    test_booth();
 
     return 0;
 }

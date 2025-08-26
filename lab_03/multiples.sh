@@ -13,5 +13,4 @@ do
 	echo " multiple are $((i*n))"
  done
 
-
-
+ 
