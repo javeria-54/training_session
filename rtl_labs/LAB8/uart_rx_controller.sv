@@ -1,12 +1,11 @@
-module Rx_Datapath  #(
-    parameter int CLK_FREQ = 50_000_000,
-    parameter int BAUD_RATE = 115200
+module Rx_shift_reg  #(
+    parameter int CLK_FREQ ,
+    parameter int BAUD_RATE 
 )(
     input   logic         clk, reset,
     input   logic         rx_serial,
     input   logic [11:0]  baud_divisor,
     input   logic [1:0]   parity_sel, 
-    input   logic         stop_bits, start_bit_en,
     output  logic [7:0]   rx_data,
     output  logic         rx_valid,
     output  logic         rx_error,

@@ -1,8 +1,8 @@
 module uart_rx_sync_fifo #(
-    parameter int DATA_WIDTH = 8,
-    parameter int FIFO_DEPTH = 16,
-    parameter int ALMOST_FULL_THRESH = 14,
-    parameter int ALMOST_EMPTY_THRESH = 2
+    parameter int DATA_WIDTH ,
+    parameter int FIFO_DEPTH ,
+    parameter int ALMOST_FULL_THRESH ,
+    parameter int ALMOST_EMPTY_THRESH 
 )(
     input  logic                    clk,
     input  logic                    rst_n,

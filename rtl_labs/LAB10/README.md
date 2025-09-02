@@ -66,39 +66,19 @@ Invalid addresses return **`32'hDEAD_BEEF`**.
 
 ---
 
-##  Master State Machines
+##  Master Slave State Machines
 
 ### Write FSM
+![](images/write_fsm.png)
 
-* **W\_IDLE** → wait for `start_write`.
-* **W\_ADDR** → send write address.
-* **W\_DATA** → send write data.
-* **W\_RESP** → wait for response, then complete.
 
 ### Read FSM
+![Synchronous_fifo](images/read_fsm.png)
 
-* **R\_IDLE** → wait for `start_read`.
-* **R\_ADDR** → send read address.
-* **R\_DATA** → wait for read data, then complete.
 
  Handshake signals (`write_done`, `read_done`) assert for **1 cycle** when transactions complete.
 
 ---
-
-##  Slave State Machines
-
-### Write FSM
-
-* **W\_IDLE → W\_ADDR → W\_DATA → W\_RESP**.
-* Writes data into register bank when valid.
-
-### Read FSM
-
-* **R\_IDLE → R\_ADDR → R\_DATA**.
-* Returns register data in `rdata`.
-
----
-
 
 ##  Example Transaction
 
@@ -111,4 +91,9 @@ Invalid addresses return **`32'hDEAD_BEEF`**.
   → Master reads back from **Register 2**.
 
 ---
+## Testbench verification module
 
+![Synchronous_fifo](images/master_slave.png)
+![Synchronous_fifo](images/interface_signal.png)
+
+---
