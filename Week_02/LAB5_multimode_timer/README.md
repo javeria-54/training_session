@@ -117,3 +117,8 @@ It provides **timeout, PWM output, and interrupt signals** for use in digital sy
 ##  Multimode timer verification:
  
 ![Multimode timer](images/timer_tb.png)
+
+---
+## Vivado simulation Multimode timer verification:
+ 
+![Multimode timer](images/timmer_vivado.png)

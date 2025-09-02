@@ -23,8 +23,12 @@ It also supports:
 - FSM-based state transitions for coin tracking
 
 ---
+## State machine
 
+![Vending Machine FSM](images/vending_machine.png)
+---
 ##  FSM States
+
 The machine keeps track of the total inserted amount using **6 states**:
 ## Vending Machine FSM Truth Table
 
@@ -79,12 +83,11 @@ The machine keeps track of the total inserted amount using **6 states**:
 
 ---
 
-## State machine
----
-![Vending Machine FSM](images/vending_machine.png)
----
-
 ##  Vending Machine verification:
  
 ![Vending Machine FSM](images/vending_machine_tb.png)
-
+---
+##  Vending Machine verification:
+ 
+![Vending Machine FSM](images/vending_machine_vivado.png)
+---

@@ -38,3 +38,6 @@ The ALU supports **arithmetic, logical, and shift operations** with status flag 
 ## ALU testbench verification:
 ![ALU testbench verification](images/alu.png)
 ---
+
+## Vivado simultaion
+![ALU testbench verification](images/alu_vivado.png)

@@ -27,3 +27,6 @@ A barrel shifter can shift or rotate data by a specified number of bit positions
 ![top module barrel shifter](images/barrel_shifter.png) 
 
 ---
+
+## Vivado simultaion
+![ALU testbench verification](images/bareel_shifter_vivado.png)

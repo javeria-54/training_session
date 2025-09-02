@@ -48,7 +48,10 @@ It can be used in timer, baud rate generator, event counter, or any digital syst
 | `zero`       | Output    | 1     | Zero detection flag (`count == 0`)                                                  |
 
 ---
+## Top module of programable counter 
 
+![Programable Counter](images/fsm.png)
+---
 ##  Functional Description
 
 1. **Reset (`rst_n=0`)**
@@ -77,4 +80,7 @@ It can be used in timer, baud rate generator, event counter, or any digital syst
 ![Programable Counter](images/programable_counter.png)
 
 ---
+---
+## Vivado simulation 
 
+![Programable Counter](images/counter_vivado.png)

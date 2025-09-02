@@ -24,3 +24,6 @@ It uses the **shift-and-add-3 algorithm (Double Dabble method)**, which is commo
 
 ---
 
+## Vivado simultaion
+![binary_to_bcd](images/binary_to_bcd.png)
+

@@ -98,4 +98,8 @@ The FSM controls SPI transaction flow:
 ![Spi controller](images/spi.png)
 
 ---
+## Vivado simulation
 
+![Spi controller](images/spi_vivado.png)
+
+---

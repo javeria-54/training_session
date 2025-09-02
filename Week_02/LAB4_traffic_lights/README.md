@@ -79,6 +79,10 @@ You can also include the FSM diagram image here:
 
 ---
 
-##  Diagram
+##  Test bench verification
 
 ![Traffic Controller FSM](images/fsm_traffic_lights_tb.png)
+
+---
+## Vivado simulation
+![Traffic Controller FSM](images/traffic_light_vivado.png) 

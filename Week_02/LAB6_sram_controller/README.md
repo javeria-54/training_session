@@ -82,3 +82,8 @@ It handles
 
 ---
 
+## Vivado simulation
+
+![Sram controller](images/sram_vivado.png)
+
+---

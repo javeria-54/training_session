@@ -39,6 +39,7 @@ This module implements an **8-to-3 Priority Encoder** with an **Enable** input.
 ![Priority encoder testbench verification](images/priority_encoder.png)
 ---
 
-
+## Vivado simultaion
+![ALU testbench verification](images/priority_encoder_vivado.png)
 
 

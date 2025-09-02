@@ -1,3 +1,20 @@
+#  Asynchronous FIFO Design
+
+##  Overview
+
+This project implements an **Asynchronous FIFO (First-In-First-Out) buffer**.
+It is used for **clock domain crossing (CDC)**, where data written in one clock domain must be safely read in another.
+
+The design ensures **data integrity** by using:
+
+* **Gray-coded read/write pointers** → prevent glitches
+* **Two-flop synchronizers** → reduce metastability
+* **Empty & Full flag logic** → prevent underflow/overflow
+* **Dual-port memory** → supports independent read and write
+
+---
+
+
 ##  Asynchronous fifo top module: 
 ![Synchronous_fifo](images/asynchronous_fifo.png)
 
@@ -105,6 +122,12 @@
 ![Synchronous_fifo](images/async_tb.png)
 
 ---
+## Vivado simulation
+
+![Synchronous_fifo](images/asynchronous_fifo_vivado.png)
+
+---
+
 
 
 
