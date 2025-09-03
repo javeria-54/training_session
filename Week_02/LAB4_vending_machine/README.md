@@ -13,6 +13,10 @@ It also supports:
 - **Amount Display** (total inserted amount)
 
 ---
+##  Fsm top module
+
+![Vending_machine FSM](images/vending_machine_top.png)
+---
 
 ##  Features
 - Accepts coins: **5¢, 10¢, 25¢**

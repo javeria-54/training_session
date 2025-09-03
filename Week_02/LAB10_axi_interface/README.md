@@ -12,13 +12,16 @@ It contains three components:
 The design demonstrates **AXI4-Lite protocol basics** (single transactions, no bursts) and is suitable for **verification testbenches** or **small SoC integrations**.
 
 ---
-
 ##  Files
 
 * `axi4_lite_if.sv` → Defines the AXI4-Lite interface and modports.
 * `axi4_lite_master.sv` → Implements the master FSM for read/write.
 * `axi4_lite_slave.sv` → Implements the slave with register bank.
 
+---
+##  Axi4-lite top module
+
+![Traffic Controller FSM](images/axi4_lite.png)
 ---
 
 ##  Parameters
@@ -73,7 +76,7 @@ Invalid addresses return **`32'hDEAD_BEEF`**.
 
 
 ### Read FSM
-![Synchronous_fifo](images/read_fsm.png)
+![AXI4_lite](images/read_fsm.png)
 
 
  Handshake signals (`write_done`, `read_done`) assert for **1 cycle** when transactions complete.

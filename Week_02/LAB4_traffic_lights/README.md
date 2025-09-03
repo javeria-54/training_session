@@ -6,7 +6,11 @@ It controls **North-South (NS)** and **East-West (EW)** traffic lights, supports
 The controller runs on a **1 Hz clock** (1 second per tick) to simulate real-time durations.
 
 ---
+##  Fsm top module
 
+![Traffic Controller FSM](images/traffic_light.png)
+
+---
 ##  Features
 - **Startup Flashing Mode** – Both directions flash Yellow for 5s after reset.  
 - **Normal Operation**  

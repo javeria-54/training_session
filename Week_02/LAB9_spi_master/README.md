@@ -15,6 +15,10 @@ It supports:
 It is designed as a **simple FSM-based SPI controller** with a synchronous interface.
 
 ---
+##  Fsm top module
+
+![SPI Controller FSM](images/spi_controller_top.png)
+---
 
 ##  Parameters
 

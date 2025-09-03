@@ -12,6 +12,12 @@ It handles
 
 ---
 
+##  Fsm top module
+
+![Sram controller FSM](images/sram_controller_top.png)
+
+---
+
 ##  Features
 
 * Supports **16-bit wide SRAM** with **15-bit address bus**
