@@ -1,6 +1,6 @@
 # Variables
 TOP_MODULE = uart_tx_datapath_tb
-SRC_FILES = rtl/uart_tx_controller.sv rtl/uart_tx_sync_fifo.sv rtl/uart_tx_datapath.sv tb/uart_tx_datapath_tb.sv
+SRC_FILES = rtl/uart_tx_datapath.sv tb/uart_tx_datapath_tb.sv
 WORK_DIR = work
 
 # Default target

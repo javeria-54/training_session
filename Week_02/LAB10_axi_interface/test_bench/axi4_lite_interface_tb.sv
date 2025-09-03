@@ -63,7 +63,7 @@ module tb_axi4_lite;
 
         // ---------- WRITE 1 ----------
         write_address = 32'h04;
-        write_data    = 32'hDEADBEEF;
+        write_data    = 32'h12345678;
         start_write = 1;
         @(posedge clk);
         wait(write_done);       // wait until write completes

@@ -96,7 +96,10 @@ Invalid addresses return **`32'hDEAD_BEEF`**.
 ---
 ## Testbench verification module
 
-![Synchronous_fifo](images/master_slave.png)
-![Synchronous_fifo](images/interface_signal.png)
+![axi4_lite](images/master_slave.png)
+![axi4_lite](images/interface_signal.png)
 
 ---
+
+## Vivado simulation 
+![axi4_lite](images/axi4_lite_simulation.png)
