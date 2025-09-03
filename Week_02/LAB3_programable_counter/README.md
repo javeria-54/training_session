@@ -67,12 +67,12 @@ It can be used in timer, baud rate generator, event counter, or any digital syst
    * If `enable=1` and no load is pending:
 
      * **Up mode (`up_down=1`)** → Counter increments until `max_count`.
-     * **Down mode (`up_down=0`)** → Counter decrements until `0`.
+     * **Down mode (`up_down=0`)** → Counter decrements until `load_value`.
 
 4. **Flags**
 
    * `tc` (Terminal Count) → High when counter reaches `max_count` in **up mode**, or `0` in **down mode**.
-   * `zero` → High whenever counter value is `0`.
+   * `zero` → High whenever counter value is `zero`.
 
 ---
 ## Testbench Verification of module 
