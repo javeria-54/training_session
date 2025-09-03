@@ -36,16 +36,18 @@ module programmable_counter (
                 else if (up_down) begin  // Count Up
                     if (count < max_count)
                         count <= count + 1;
+                    else 
+                        count <= 0;
                 end
                 else begin          // Count Down
                     if (count > load_value)
                         count <= count - 1;
+                    else 
+                        count <= 0;
                     end
                 end
             end
         end
-
-            
 
     // Status flag outputs
     assign tc   = (up_down && (count == max_count)) ||   // Up reached max
